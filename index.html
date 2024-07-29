@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gary's Portfolio</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+          <a href="#home">
+              <img src="images/logo.png" class="logo">
+          </a>
+      </div>
+
+      <!-- Burger Menu Button (hidden by default) -->
+    <div class="burger-menu" id="burger-menu">
+      <div class="burger-icon"></div>
+      <div class="burger-icon"></div>
+      <div class="burger-icon"></div>
+    </div>
+
+      <div class="nav-btns">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+      </div>
+        
+      <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    </div>
+  </div>
+
+ <!-- First Page Starts Here -->
+  <div class="hero-section" id="home">
+  <div id="particles-hero"></div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+        <h1>Hello, I'm Gary Katamadze.</h1>
+        <h3>A passionate Computer Science Student.</h3>
+        <a href="#contact"><button class="contact-btn">GET IN TOUCH</button></a>
+       
+  </div>
+  </div>
+
+    <!-- About Me Section -->
+    <div class="about-section" id="about">
+      <div id="particles-about"></div>
+      <h2 class="about-header">A BIT ABOUT ME</h2>
+        <div class="about-content">
+          <div class="about-description">
+            <p class="about-paragraph"> 
+               I’m a computer science student who’s passionate about programming. During my first year at university, I dove into object-oriented programming, Java, and functional programming. I’ve also picked up a lot about C# and MySQL and enjoy tackling coding challenges on LeetCode.  </p>
+          
+            <p class="about-paragraph">
+              I’ve got a solid grasp of front-end technologies like HTML, CSS, and JavaScript, and I’ve worked on a variety of projects using these skills. Right now, I’m exploring ASP.NET Core, where I’m learning about project structure, MVC, design patterns, and SOLID principles. I’ve built projects that integrate both front-end and back-end, using Entity Framework for data management and implementing user login and registration with Identity.  </p>
+          
+            <p class="about-paragraph">
+              Beyond my studies, I’m committed to staying physically active and maintaining great shape, which reflects my dedication and hard work in all areas of my life.
+            </p>
+          </div>
+        </div>
+    </div>
+
+     <!-- Education Section -->
+      <div class="education-section" id="education">
+        <div id="particles-edu"></div>
+        <h2 class="education-header">EDUCATION</h2>
+        <div class="education-content">
+          <div class="education-description">
+            <p class="p1">Kutaisi International University</p>
+            <p class="p2">Bachelor in Computer Science</p>
+            <p class="p3">2023-Present</p>
+          </div>
+          <img class="kiu-logo" src="images/kiu.png">
+          <a href="https://www.linkedin.com/school/%E1%83%A5%E1%83%A3%E1%83%97%E1%83%90%E1%83%98%E1%83%A1%E1%83%98%E1%83%A1-%E1%83%A1%E1%83%90%E1%83%94%E1%83%A0%E1%83%97%E1%83%90%E1%83%A8%E1%83%9D%E1%83%A0%E1%83%98%E1%83%A1%E1%83%9D-%E1%83%A3%E1%83%9C%E1%83%98%E1%83%95%E1%83%94%E1%83%A0%E1%83%A1%E1%83%98%E1%83%A2%E1%83%94%E1%83%A2%E1%83%98-kutaisi-international-university/" target="_blank"><button class="learn-more-btn">Learn More</button></a>
+        </div>
+      </div>
+      
+       <!-- Skills Section -->
+  <div class="skills-section" id="skills">
+    <div id="particles-skills"></div>
+    <h2 class="skills-header">MY SKILLS</h2>
+
+    <div class="filter-buttons">
+      <button class="skills-active-btn" onclick="filterSkills('all')">All</button>
+      <button onclick="filterSkills('frontend')">Front-end</button>
+      <button onclick="filterSkills('backend')">Back-end</button>
+      <button onclick="filterSkills('others')">Others</button>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skills-grid-item frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        <p class="skills-grid-text">HTML</p>
+      </div>
+      <div class="skills-grid-item frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+        <p class="skills-grid-text">CSS</p>
+      </div>
+      <div class="skills-grid-item frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+        <p class="skills-grid-text">JavaScript</p>
+      </div>
+      <div class="skills-grid-item frontend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+        <p class="skills-grid-text">React</p>
+      </div>
+      <div class="skills-grid-item backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+        <p class="skills-grid-text">Java Core</p>
+      </div>
+      <div class="skills-grid-item backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+        <p class="skills-grid-text">C#</p>
+      </div>
+      <div class="skills-grid-item backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+        <p class="skills-grid-text">ASP.NET, MVC, Web API</p>
+      </div>
+      <div class="skills-grid-item backend">
+        <img src="images/databases-icon.png">
+        <p class="skills-grid-text">Relational Databases</p>
+      </div>
+      <div class="skills-grid-item backend">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+        <p class="skills-grid-text">SQL Server\MySQL</p>
+      </div>
+      <div class="skills-grid-item others">
+        <img src="images/problemsolving.png">
+        <p class="skills-grid-text">Problem-Solving Skills</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects-section" id="projects">
+    <div id="particles-projects"></div>
+      <h1 class="projects-header">My Projects</h1>
+      <div class="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <h3>To-Do List</h3>
+                <p>A full-stack application with user authentication and CRUD functionality.</p>
+                <p class="technologies-text">Technologies: C#, ASP.NET MVC, SQL Server, HTML, CSS</p>
+            </div>
+
+            <div class="carousel-item ">
+              <h3>Blog App</h3>
+              <p>A blog application with CRUD operations and user authentication.Users can post and see each others blogs.</p>
+              <p class="technologies-text"> Technologies: ASP.NET Core, C#, SQL Server, HTML, CSS</p>
+          </div>
+
+          <div class="carousel-item ">
+            <h3>Calculator</h3>
+            <p>A simple calculator that performs basic arithmetic operations.</p>
+            <p class="technologies-text">Technologies: HTML, CSS, JavaScript</p>
+        </div>
+
+          <div class="carousel-item ">
+            <h3>Weather Forecast</h3>
+            <p>Fetches real-time weather data from the OpenWeather API with cool styling.</p>
+            <p class="technologies-text">Technologies: HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="carousel-item ">
+          <h3>SpendSmart</h3>
+          <p>A personal finance tracking app with budget management and CRUD operations.</p>
+          <p class="technologies-text">Technologies: ASP.NET Core, SQL Server</p>
+      </div>
+
+      <div class="carousel-item ">
+        <h3>Rock-Paper-Scissors</h3>
+        <p>A game where you play against the computer. It saves scores and features a cool design.</p>
+        <p class="technologies-text">Technologies: HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="carousel-item ">
+      <h3>Tic-Tac-Toe</h3>
+      <p>The classic game with a modern and stylish design.</p>
+      <p class = "technologies-text">Technologies: Java, GUI</p>
+  </div>
+
+  <div class="carousel-item ">
+    <h3>Spotijy</h3>
+    <p>Developed in Java using OOP principles, this project includes classes to build and manage music libraries.</p>
+    <p class="technologies-text">Technologies: Java, OOP</p>
+  </div>
+
+        </div>
+        
+        <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+
+        <div class="carousel-indicators">
+          <span class="indicator active" onclick="moveToSlide(0)"></span>
+          <span class="indicator" onclick="moveToSlide(1)"></span>
+          <span class="indicator" onclick="moveToSlide(2)"></span>
+          <span class="indicator" onclick="moveToSlide(3)"></span>
+          <span class="indicator" onclick="moveToSlide(4)"></span>
+          <span class="indicator" onclick="moveToSlide(5)"></span>
+          <span class="indicator" onclick="moveToSlide(6)"></span>
+          <span class="indicator" onclick="moveToSlide(7)"></span>
+        </div>
+      
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+   <div class="contact-section" id="contact">
+    <div id="particles-contact"></div>
+    <h1 class="contact-header">Contact Me</h1>
+    <div class="contact-content">
+
+      <div class="contact-item">
+        <img src="images/phone.png" class="contact-img">
+        <div class="contact-details">
+          <p class="details-header">Phone</p>
+          <p>(+995) 555645045</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <img src="images/mail.png" class="contact-img">
+        <div class="contact-details">
+           <p class="details-header">Email</p>
+           <p>garixubu@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <img src="images/location.png" class="contact-img">
+        <div class="contact-details">
+          <p class="details-header">Location</p>
+          <p>Georgia, Kutaisi, 4600</p>
+        </div>
+      </div>
+
+    </div>
+   </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+    <div id="particles-footer"></div>
+      <div class="footer-content">
+
+       <p>© 2024 Gary Katamadze </p>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/gari.katamadze.9"><img src="images/facebook.png"></a>
+        <a href="https://www.instagram.com/garikatamadze?igsh=MTM5ZDh5azFsOGdldw%3D%3D&utm_source=qr"> <img src="images/instagram.png"> </a>
+        <a href="https://www.linkedin.com/in/gary-katamadze-25948b2b3/"><img src="images/linkedin.png"></a>
+      </div>
+
+      </div>
+      </div>
+      
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
