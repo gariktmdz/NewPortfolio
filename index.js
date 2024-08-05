@@ -1,5 +1,5 @@
 /* Hero Section Animation Background */
-particlesJS("particles-hero", {
+const particlesConfig1 = {
   "particles": {
     "number": {
       "value": 100,
@@ -94,11 +94,11 @@ particlesJS("particles-hero", {
     }
   },
   "retina_detect": true
-});
+};
 
 /* About section  Animation Background */
-document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-about", {
+
+const particlesConfig2 =  {
     "particles": {
       "number": {
         "value": 50,
@@ -176,13 +176,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     },
     "retina_detect": true
-  });
-});
 
-/* Education section  Animation Background */
+};
 
-document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-edu", {
+  const particlesConfig3 =  {
     "particles": {
       "number": {
         "value": 70,
@@ -255,331 +252,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     },
     "retina_detect": true
-  });
-});
-
-/* Skills section  Animation Background */
-document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-skills", {
-    "particles": {
-      "number": {
-        "value": 50,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false
-      },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
-        },
-        "resize": true
-      }
-    },
-    "retina_detect": true
-  });
-});
-
-/* Projects section  Animation Background */
+    };
 
 document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-projects", {
-    "particles": {
-      "number": {
-        "value": 70,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "star",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false
-      },
-      "move": {
-        "enable": true,
-        "speed": 0.8,
-        "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
-        },
-        "resize": true
-      }
-    },
-    "retina_detect": true
-  });
-});
-
-/* Contact section  Animation Background */
-document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-contact", {
-    "particles": {
-      "number": {
-        "value": 50,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false
-      },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
-        },
-        "resize": true
-      }
-    },
-    "retina_detect": true
-  });
-});
-
-/* Footer  Animation Background */
-
-document.addEventListener("DOMContentLoaded", function() {
-  particlesJS("particles-footer", {
-    "particles": {
-      "number": {
-        "value": 70,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "star",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false
-      },
-      "move": {
-        "enable": true,
-        "speed": 0.8,
-        "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false
-        },
-        "onclick": {
-          "enable": false
-        },
-        "resize": true
-      }
-    },
-    "retina_detect": true
-  });
+  particlesJS("particles-hero", particlesConfig1);
+  particlesJS("particles-about", particlesConfig2);
+  particlesJS("particles-edu", particlesConfig3); 
+  particlesJS("particles-skills", particlesConfig2);
+  particlesJS("particles-projects", particlesConfig3);
+  particlesJS("particles-contact", particlesConfig2);
+  particlesJS("particles-footer", particlesConfig3);
 });
 
 /* Burger Menu */
